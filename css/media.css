@@ -1,0 +1,702 @@
+@media screen and (min-width:1200px){
+    .container{
+        max-width: 1300px !important;
+    }
+}
+
+@media (min-width: 1025px){
+    .container{
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+
+@media screen and (max-width:1300px) and 
+(min-width:1200px){
+    .kia {
+        padding: 9px 9px 9px 9px;
+    }
+    .kia p{
+        font-size: 12px;
+    }
+    .kia h1 {
+        font-size: 15px;
+    }
+    .kia h5 {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:1250px) and 
+(min-width:992px){
+    .footer-logo {
+        width: 33.33%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .servMenu {
+        width: 33.33%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .aboutMenu {
+        width: 33.33%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .specMenu {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .themeMenu {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .footer_menu{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:1199px){
+    .balance {
+        display: none;
+    }
+    .blogpost_box {
+        padding: 40px 35px;
+    }
+    .mt-80{
+        margin-top: 80px;
+    }
+    .drag_box {
+        padding: 38px 30px 50px 30px;
+    }
+}
+
+@media screen and (max-width:1199px) and 
+(min-width:992px){
+    .logo a img{
+        width: 80%;
+    }
+    .box {
+        margin-left: 0px;
+    }
+    .phone_number {
+        width: 160px;
+    }
+    .phone_number p{
+        font-size: 15px;
+    }
+    .seans {
+        width: 160px;
+    }
+    .seans p{
+        font-size: 10px;
+    }
+    .slide-box, .slide-box-2{
+        height: 280px;
+        width: 320px;
+    }
+    .slide-box-2 h1, .slide-box h1{
+        font-size: 20px !important;
+    } 
+    .slide-box p, .slide-box-2 p{
+        font-size: 13px !important;
+        margin-bottom: 35px !important;
+    }
+    .box-1{
+        flex-wrap: wrap;
+    }
+    .part-1{
+        margin-bottom: 20px;
+    }
+    .part-3 {
+        justify-content: space-around;
+        flex: 1 0 auto;
+    }
+    .support_box h1 {
+        font-size: 27px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:991px){
+    .nav_links{
+        display: none;
+    }
+    .burger_menu{
+        display: block;
+    }
+    .container{
+        max-width: 950px !important; 
+    }
+    .logo a img{
+        width: 75%;
+    }
+    .box {
+        margin-left: 0px;
+    }
+    .phone_number {
+        width: 160px;
+    }
+    .phone_number p{
+        font-size: 15px;
+    }
+    .seans {
+        width: 160px;
+    }
+    .seans p{
+        font-size: 10px;
+    }
+    .box-1{
+        flex-wrap: wrap;
+    }
+    .part-1{
+        margin-bottom: 20px;
+    }
+    .part-3 {
+        justify-content: space-around;
+    }
+    .balance_box{
+        flex-wrap: wrap !important; 
+    }
+    .form_group textarea {
+        width: 100% !important;
+    }
+    .form_group select {
+        width: 100% !important;
+    }
+    .form-group label {
+        margin-bottom: 15px !important;
+    }
+    .support_box h1 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .send_btn {
+        justify-content: center;
+    }
+    .send_btn button{
+        margin-right: 0;
+        padding: 12px 50px !important;
+    }
+    .form_label {
+        display: unset;
+        align-items: unset;
+    }
+    .faq_box {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+    }
+    .info_box {
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:991px) and 
+(min-width:768px){
+    .slide-box p, .slide-box-2 p{
+        font-size: 13px !important;
+        margin-bottom: 35px !important;
+    }
+    .slide-box, .slide-box-2{
+        height: 280px;
+        width: 255px;
+        padding: 10px;
+    }
+    .slide-box-2 h1, .slide-box h1{
+        font-size: 20px !important;
+    } 
+    .video{
+        margin-bottom: 20px !important;
+    }
+    .video_block{
+        flex: 0 0 100%;
+        max-width: 100%; 
+    }
+    .under_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .footer_menu{
+        flex-wrap: wrap;
+        padding-bottom: 0px;
+    }
+    .footer-logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .servMenu {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .aboutMenu {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .specMenu {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .themeMenu {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .account_block ul li a {
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+    .sticky {
+        position: sticky;
+        left: 0;
+        z-index: 1;
+        white-space: nowrap;
+        background-color: #ffffff;
+    }
+    .blogpost_box h2 {
+        font-size: 20px;
+    }
+    .blogpost_box p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .slide-box, .slide-box-2{
+        height: 110px;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    .slide-box-2 h1, .slide-box h1{
+        font-size: 16px !important;
+        margin-bottom: 0 !important;
+    }
+    .slide-box p, .slide-box-2 p{
+        font-size: 11px !important;
+        margin-bottom: 5px !important;
+    }
+    .car-cap{
+        flex-wrap: wrap;
+    }
+    .slide-box a, .slide-box-2 a{
+        font-size: 13px !important;
+        padding: 2px 20px !important;
+        margin-bottom: 5px;
+    }
+    .carousel-caption{
+        padding-bottom: 55px !important;
+    } 
+    .carousel-control-next-icon, 
+    .carousel-control-prev-icon{
+        background-size: 30% auto !important;
+        width: 35px !important;
+        height: 35px !important;
+    }
+    .carousel-control-next, 
+    .carousel-control-prev{
+        width: 10% !important;
+    }
+    .text-2 p{
+        margin-top: 20px !important;
+    }
+    .video{
+        margin-bottom: 20px !important;
+    }
+    .media_box {
+        margin-bottom: 35px;
+    }
+    .under_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .underground p{
+        text-align: center;
+    }
+    .foot-logo {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .about_serv {
+        justify-content: space-around;
+    }
+    .footer_menu{
+        flex-wrap: wrap;
+        padding-bottom: 0px;
+    }
+    .footer-logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .servMenu {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .aboutMenu {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .specMenu {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .themeMenu {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .sticky {
+        position: sticky;
+        left: 0;
+        z-index: 1;
+        white-space: nowrap;
+        background-color: #ffffff;
+    }
+}
+
+@media screen and (max-width:767px) and 
+(min-width:500px){
+    .approved, .error, .hold{
+        font-size: 12px !important;
+    }
+    .review_box h1{
+        font-size: 28px !important;
+        margin-bottom: 10px !important;
+    }
+    thead th{
+        font-size: 11px !important;
+    }
+    tbody th, tbody td{
+        font-size: 11px !important;
+    }
+    .table td, .table th {
+        padding: 10px 7px !important;
+    }
+    .blogpost_box {
+        padding: 40px 20px;
+    }
+    .blogpost_box h2 {
+        font-size: 20px;
+    }
+    .blogpost_box p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:499px){
+    .approved, .error, .hold{
+        font-size: 12px !important;
+    }
+    .review_box h1{
+        font-size: 28px !important;
+        margin-bottom: 10px !important;
+    }
+    thead th{
+        font-size: 11px !important;
+    }
+    tbody th, tbody td{
+        font-size: 11px !important;
+    }
+    .table td, .table th {
+        padding: 10px 7px !important;
+    }
+    .table_balance .balance_btn{
+        padding: 5px 5px !important;
+        font-size: 8px !important;
+    }
+    .table_balance h2{
+        font-size: 10px !important;
+        margin-bottom: 0 !important;
+    }
+    .balance_box {
+        justify-content: space-around !important;
+    }
+    .modal_balance {
+        margin-left: 15px !important;
+    }
+    .blogpost_box {
+        padding: 40px 20px;
+    }
+    .blogpost_box h2 {
+        font-size: 14px;
+        padding: 0 0px;
+        line-height: 25px;
+    }
+    .blogpost_box p {
+        font-size: 11px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .slick-dots li {
+        margin: 0 2px;
+    }
+    .accordion {
+        font-size: 13px !important;
+    }
+    .panel {
+        padding: 0 5px;
+    }
+    .panel p {
+        font-size: 12px !important;
+    }
+    .faq_text {
+        font-size: 25px !important;
+    }
+    .gallery_box h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .drag_box {
+        padding: 15px 5px 10px 5px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .navMenu_profile .logo {
+        margin-bottom: 30px;
+    }
+    .navMenu_profile .navbar{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:564px){
+    .slide-box, .slide-box-2{
+        height: 140px;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    .slide-box-2 h1, .slide-box h1{
+        font-size: 16px !important;
+        margin-bottom: 0 !important;
+    }
+    .slide-box p, .slide-box-2 p{
+        font-size: 11px !important;
+        margin-bottom: 5px !important;
+    }
+    .car-cap{
+        flex-wrap: wrap;
+    }
+    .slide-box a, .slide-box-2 a{
+        font-size: 13px !important;
+        padding: 2px 20px !important;
+        margin-bottom: 5px;
+    }
+    .carousel-caption{
+        padding-bottom: 25px !important;
+    } 
+    .carousel-control-next-icon, 
+    .carousel-control-prev-icon{
+        background-size: 30% auto !important;
+        width: 35px !important;
+        height: 35px !important;
+    }
+    .carousel-control-next, 
+    .carousel-control-prev{
+        width: 10% !important;
+    }
+    .pagination li {
+        padding-right: 10px;
+    }
+    .pagination a {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:529px){
+    .box-1{
+        flex-wrap: wrap;
+    }
+    .part-1{
+        margin-bottom: 20px;
+    }
+    .part-3 {
+        justify-content: space-around;
+    }
+    .part-3 span {
+        height: 35px;
+        width: 35px;
+    }
+    .part-3 a {
+        font-size: 12px;
+        padding: 7px 16px;
+    }
+    .logo {
+        width: 80% !important;
+    }
+    .phone_number {
+        width: 100px !important;
+        height: 39px !important;
+    }
+    .phone_number p {
+        font-size: 9px !important;
+    }
+    .seans {
+        width: 100px !important;
+    }
+    .seans p {
+        font-size: 7px !important;
+    }
+    .burger_menu {
+        width: 20% !important;
+        text-align: right !important;
+    }
+    .navbar{
+        padding: 8px 0px !important;
+    }
+}
+
+@media screen and (max-width:529px) and 
+(min-width:470px){
+    .servMenu h1, .aboutMenu h1, 
+    .specMenu h1, .themeMenu h1{
+        font-size: 16px;
+    }
+    .servMenu a, .aboutMenu a,
+    .specMenu a, .themeMenu a{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:474px){
+
+}
+
+@media screen and (max-width:469px){
+    .servMenu h1, .aboutMenu h1, 
+    .specMenu h1, .themeMenu h1{
+        font-size: 18px;
+    }
+    .servMenu a, .aboutMenu a,
+    .specMenu a, .themeMenu a{
+        font-size: 16px;
+    }
+    .footer_menu{
+        flex-wrap: wrap;
+        padding-bottom: 0px;
+    }
+    .footer-logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .servMenu {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .aboutMenu {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .specMenu {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .themeMenu {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .under_video_box,
+    .under_video_box_2 {
+        height: 140px;
+        width: 90%;
+        padding: 10px;
+        margin: -35px auto 0 auto;
+    }
+    .play{
+        width: 40px;
+        height: 40px;
+    }
+    .under_video_box h2,
+    .under_video_box_2 h2 {
+        font-size: 14px;
+    }
+    .under_video_box h5,
+    .under_video_box_2 h5{
+        font-size: 12px;
+    }
+    .under_video_box p,
+    .under_video_box_2 p {
+        font-size: 10px;
+    }
+    .mt-80 {
+        margin-top: 25px;
+    }
+    .kia {
+        padding: 9px;
+    }
+    .right-box{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .right-box img {
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width:449px){
+    .box-1{
+        flex-wrap: wrap;
+    }
+    .part-1{
+        margin-bottom: 20px;
+    }
+    .part-3 {
+        justify-content: space-around;
+        flex-wrap: wrap !important;
+    }
+    .part-3 span {
+        height: 35px;
+        width: 35px;
+    }
+    .part-3 a {
+        font-size: 12px;
+        padding: 7px 16px;
+    }
+}
+
+@media screen and (max-width:383px){
+    .part-2 {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:351px){
+    .part-3 div{
+        width: 33.33% !important;
+    }
+    .part-3 div:last-child{
+        width: 100% !important;
+    }
+}
