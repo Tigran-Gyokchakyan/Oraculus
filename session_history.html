@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <title>Session history</title>
+</head>
+
+<body>
+    <!-- navdar start -->
+    <header class="navMenu navMenu_profile">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.png" alt=""></a>
+                    <div class="box">
+                        <div class="phone_number">
+                            <p><img src="img/phone_num.svg" alt=""> +7 963 992-72-01</p>
+                        </div>
+                        <div class="seans">
+                            <p>Первый сеанс — бесплатный!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="user_links">
+                    <div class="balance">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn balance_btn" data-toggle="modal" data-target="#exampleModal">
+                            ПОПОЛНИТЬ БАЛАНС
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">ПОПОЛНЕНИЕ БАЛАНСА</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control form_control balanceinp"
+                                                aria-label="Dollar amount (with dot and two decimal places)">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">RUB</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn-rub">
+                                            <button id="btn-1000" value="1.000">1.000 RUB</button>
+                                            <button id="btn-5000" value="5.000">5.000 RUB</button>
+                                            <button id="btn-10000" value="10.000">10.000 RUB</button>
+                                        </div>
+                                        <div class="cash-box">
+                                            <button class="cash">ПОПОЛНИТЬ БАЛАНС</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end Modal -->
+                    </div>
+                    <div class="user_name">
+                        <div>
+                            <img src="img/Oval Copy 15.png" alt="">
+                        </div>
+                        <div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="prof-name">
+                                        <h5>Konstantin...</h5>
+                                        <h6>Balance: 150 000 RUB</h6>
+                                    </div>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">ПРОФИЛЬ</a>
+                                    <div class="liner"></div>
+                                    <a class="dropdown-item" href="#">ГАЛЕРЕЯ</a>
+                                    <div class="liner"></div>
+                                    <a class="dropdown-item" href="#">ОТЗЫВЫ</a>
+                                    <div class="liner"></div>
+                                    <a class="dropdown-item" href="#">ИСТОРИЯ СЕАНСОВ</a>
+                                    <div class="liner"></div>
+                                    <a class="dropdown-item" href="#">ЗАКАЗАННЫЕ УСЛУГИ</a>
+                                    <div class="liner"></div>
+                                    <a class="dropdown-item" href="#">БАЛАНС</a>
+                                    <div class="liner"></div>
+                                    <a class="dropdown-item" href="#">ПОДДЕРЖКА</a>
+                                    <div class="liner"></div>
+                                    <a class="dropdown-item" href="#">ВЫХОД</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- navbar end -->
+
+    <!-- reviews block -->
+    <section class="review_block">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="bread">
+                        <p><a href="#">Oraculus24</a><i class="fas fa-caret-right"></i>Личный кабинет</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="account_block">
+                        <ul>
+                            <li>
+                                <a href="">ПРОФИЛЬ</a>
+                            </li>
+                            <li>
+                                <a href="">ГАЛЕРЕЯ</a>
+                            </li>
+                            <li>
+                                <a href="">ОТЗЫВЫ</a>
+                            </li>
+                            <li>
+                                <a href="" class="active_blank">ИСТОРИЯ СЕАНСОВ</a>
+                            </li>
+                            <li>
+                                <a href="">ЗАКАЗАННЫЕ УСЛУГИ</a>
+                            </li>
+                            <li>
+                                <a href="">БАЛАНС</a>
+                            </li>
+                            <li>
+                                <a href="">ПОДДЕРЖКА</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <div class="history_box">
+                        <div>
+                            <h1>История сеансов</h1>
+                        </div>
+                        <hr class="hr">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="sticky">Дата</th>
+                                        <th scope="col">Тип услуги</th>
+                                        <th scope="col">Cеанс</th>
+                                        <th scope="col">Сумма</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="sticky">11-16-2020</th>
+                                        <td>Liechtenstein</td>
+                                        <td>30 min</td>
+                                        <td>500 RUB</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="sticky">10-24-2020</th>
+                                        <td>Antigua and Barbuda</td>
+                                        <td>50 min</td>
+                                        <td>1000 RUB</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="sticky">11-21-2020</th>
+                                        <td>Ukraine</td>
+                                        <td>86 min</td>
+                                        <td>2000 RUB</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="sticky">02-15-2020</th>
+                                        <td>Czech Republic</td>
+                                        <td>20 min</td>
+                                        <td>3000 RUB</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="sticky">01-28-2020</th>
+                                        <td>Trinidad and Tobago</td>
+                                        <td>10 min</td>
+                                        <td>3000 RUB</td>
+                                    </tr>
+                                    <tr class="table_hide">
+                                        <th scope="row" class="sticky">02-15-2020</th>
+                                        <td>Czech Republic</td>
+                                        <td>20 min</td>
+                                        <td>3000 RUB</td>
+                                    </tr>
+                                    <tr class="table_hide">
+                                        <th scope="row" class="sticky">01-28-2020</th>
+                                        <td>Trinidad and Tobago</td>
+                                        <td>10 min</td>
+                                        <td>3000 RUB</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="show_more">
+                            <button class="more">Показать еще</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-1"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

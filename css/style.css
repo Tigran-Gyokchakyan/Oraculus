@@ -8,7 +8,7 @@
 }
 
 p,h1,h2,h3,h4,h5,h6,a,span{
-    font-family: "Segoe UI";
+    font-family: "Segoe UI"; 
 }
 
 .fa, .fas {
@@ -87,7 +87,7 @@ p,h1,h2,h3,h4,h5,h6,a,span{
     font-size: 14px;
     font-weight: 500;
     line-height: 19px;
-    padding: 0 15px;
+    padding: 0 15px;  
 }
 
 .login{
@@ -105,7 +105,7 @@ p,h1,h2,h3,h4,h5,h6,a,span{
     font-size: 14px;
     font-weight: 500;
     line-height: 19px;
-    padding: 0 15px;
+    padding: 0 15px;   
 }
 
 .log img{
@@ -240,7 +240,7 @@ p,h1,h2,h3,h4,h5,h6,a,span{
 .slide-box-2:hover{
     transform: scale(1.1);
 }
-
+  
 
 
 .car-cap{
@@ -397,48 +397,133 @@ p,h1,h2,h3,h4,h5,h6,a,span{
 }
 
 /* call section end */
-
-
 /* filter section */
-.filter{
+.filter {
   height: 80px;
-  background: #FFFFFF;
-  width: 100%;
+	background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.filter-item:after {
-    position: relative !important;
-    top: 0 !important;
-    right: 0 !important;
-    transform: rotate(0) !important;
+.filter ul.container.ul-reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.filters .btn-group{
-  align-items: center;
+.filter > ul > li {
+	display: inline-block;
+  padding: 0 15px;
 }
-.filterdrop.show .filter-item{
-  background-color: rgb(211 15 153 / 0.1) !important;
+.filter > ul > li > a {
+	color: #000;
+  text-decoration: none;
+  padding: 0 25px;
 }
-#filter-item-sit, #filter-item-us{
-    border-left: 1px solid #ccc !important;
-    border-right: 1px solid #ccc !important;
+.filter > ul > .droppable:hover {
+    height: 65px;
+    line-height: 65px;
+    background-color: rgb(211 15 153 / 0.1);
 }
-.mr-r{
-  margin-right: 20px;
+.mega-menu {
+    background: #ffffff;
+    display: none;
+    left: 0;
+    position: absolute;
+    width: 100%;
 }
-.mr-l{
-  margin-left: 20px;
+.droppable:hover .mega-menu {
+    display: block;
+    z-index: 9;
+    padding: 40px 0;
 }
-.filter-item {
-    width: 160px;
-    text-align: center;
-    height: 80px;
-    text-align: center;
+.cf:before,
+.cf:after {
+	content: " ";
+   display: table;
 }
+.cf:after {clear: both;}
 
+.filter-checkbox {
+  display: none;
+}
+.filter-checkbox:checked + label .label-name {
+  border: 1px solid #D21BA5;
+}
+.label-name {
+    -webkit-transition-property: left;
+    -webkit-transition-duration: 1s;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    cursor: pointer;
+    color: #444;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-top: 0;
+    border: 1px solid #DADADA;
+    margin-right: 10px;
+    height: 50px;
+}
+.filter-checkbox:checked + label div.checkmark {
+  display: block;
+}
+.send-filter {
+    color: #fff;
+    background-color: #D30F99;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    border: 0;
+    border-radius: 50px;
+}
+div#nav-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+.nav-tabs .nav-link.active {
+   border-color: none !important;
+   color: #DF1E1E !important;
+   border: 0;
+   border-bottom: 3px solid #DF1E1E !important;
+   padding: 0 !important;
+   font-weight: 800;
+}
+.nav-tabs .nav-link{
+  color: #000;
+  font-weight: 800;
+}
+.nav-tabs .nav-link:hover{
+  border: 0;
+  color: #DF1E1E !important;
+}
+a.filter-title {
+    position: relative;
+}
+a.filter-title:after {
+    content: "\f106";
+    position: absolute;
+    right: 0;
+    top: -5px;
+    font-size: 20px;
+    color: #0e0e0e;
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900;
+}
+a.filter-title:hover.filter-title:after{
+    content: "\f107";
+    position: absolute;
+    right: 0;
+    top: -20px;
+    font-size: 20px;
+    color: #0e0e0e;
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900;
+}
 /* filter section end */
-
 
 /* post section */
 
@@ -481,14 +566,14 @@ p,h1,h2,h3,h4,h5,h6,a,span{
 
 .part-1 p{
     height: 17px;
-    width: 57px;
+    width: 57px;  
     color: #000000;
     font-family: "Segoe UI";
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 17px;
-    margin-left: 10px;
+    margin-left: 10px; 
 }
 
 .part-1 span{
@@ -767,7 +852,7 @@ p,h1,h2,h3,h4,h5,h6,a,span{
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 24px;
+    line-height: 24px; 
 }
 
 .servMenu a, .aboutMenu a,
@@ -777,7 +862,7 @@ p,h1,h2,h3,h4,h5,h6,a,span{
     font-size: 16px;
     letter-spacing: 0;
     line-height: 30px;
-    display: block;
+    display: block; 
 }
 
 .servMenu a:hover{
@@ -873,6 +958,7 @@ p,h1,h2,h3,h4,h5,h6,a,span{
     position: absolute;
     left: -12%;
     top: 0;
+    z-index: -1;
 }
 
 .circle{
@@ -884,8 +970,9 @@ p,h1,h2,h3,h4,h5,h6,a,span{
 .order{
     padding-top: 60px;
     padding-left: 60px;
+    padding-right: 60px;
     height: 428px;
-    width: 910px;
+    width: 60%;
     border-radius: 18px;
     background-color: #FFFFFF;
     box-shadow: 0 0 30px 0 rgba(0,0,0,0.1);
@@ -992,7 +1079,7 @@ p,h1,h2,h3,h4,h5,h6,a,span{
     font-weight: 600;
     letter-spacing: 0;
     line-height: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
 }
 
 .advice_box p{
@@ -1001,8 +1088,8 @@ p,h1,h2,h3,h4,h5,h6,a,span{
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 19px;
-    margin-bottom: 40px;
+    line-height: 19px; 
+    margin-bottom: 40px; 
 }
 
 .btn-1{
@@ -1248,6 +1335,14 @@ button:focus{
     max-width: 100%;
 }
 
+.coffeecup_image img{
+    max-width: 100%;
+}
+
+.main_image img{
+    max-width: 100%;
+}
+
 /* end page */
 
 /* blogpost */
@@ -1397,13 +1492,13 @@ button:focus{
   margin: 0 auto;
   overflow: auto;
   z-index: 3;
-}
+} 
 
 #modal-image {
   margin: 0 auto;
   max-width: 100%;
   width: 100%;
-}
+}  
 div#myModal {
     position: fixed;
     left: 0;
@@ -1455,7 +1550,7 @@ div#myModal {
     font-weight: bold !important;
     letter-spacing: 0;
     line-height: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
 }
 
 .play-box{
@@ -1554,7 +1649,7 @@ div#myModal {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 21px;
+    line-height: 21px;  
 }
 
 .kia h5{
@@ -1614,7 +1709,7 @@ div#myModal {
     font-family: "Segoe UI";
     font-size: 14px;
     letter-spacing: 0;
-    line-height: 19px;
+    line-height: 19px; 
 }
 
 .blog-2-box p{
@@ -1697,7 +1792,7 @@ div#myModal {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 19px;
+    line-height: 19px; 
 }
 
 .user_name p{
@@ -1905,7 +2000,7 @@ tbody th, tbody td{
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 19px;
+    line-height: 19px;   
 }
 
 .refresh{
@@ -1932,7 +2027,7 @@ tbody th, tbody td{
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 0;
-    line-height: 28.8px;
+    line-height: 28.8px; 
 }
 
 .balance_box {
@@ -1989,14 +2084,14 @@ tbody th, tbody td{
 
 .modal-header{
     border-radius: 20px 20px 0 0 !important;
-    background: linear-gradient(180deg, #E64F84 0%, #D41099 100%);
+    background: linear-gradient(180deg, #E64F84 0%, #D41099 100%); 
     justify-content: center !important;
     padding: 28px !important;
 }
 
 .btn-rub button{
     border: 1px solid #D30F99;
-    border-radius: 24px;
+    border-radius: 24px; 
     color: #363738;
     font-family: "Segoe UI";
     font-size: 14px;
@@ -2031,7 +2126,7 @@ tbody th, tbody td{
     line-height: 19px !important;
     border: none !important;
     border-radius: 10px 0 0 10px !important;
-    background-color: #E5EAED !important;
+    background-color: #E5EAED !important; 
 }
 
 .input-group-text{
@@ -2075,6 +2170,45 @@ tbody th, tbody td{
     margin-top: 42px;
 }
 
+/* services page */
+
+.service_box{
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    padding: 30px 27px 50px 30px;
+    margin-top: 30px;
+}
+
+.service_box h1{
+    color: #3F3E48;
+    font-family: "Segoe UI";
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 38.4px;
+    margin-bottom: 30px;
+}
+
+/* session history */
+
+.history_box{
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    padding: 30px 27px 50px 30px;
+    margin-top: 30px;
+}
+
+.history_box h1{
+    color: #3F3E48;
+    font-family: "Segoe UI";
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 38.4px;
+    margin-bottom: 30px;
+}
 
 /* faq page */
 
@@ -2101,7 +2235,7 @@ tbody th, tbody td{
     font-size: 13px;
     letter-spacing: 0;
     line-height: 17px;
-    margin-right: 94px;
+    margin-right: 94px; 
 }
 
 .form_box form{
@@ -2110,7 +2244,7 @@ tbody th, tbody td{
 
 .form_group{
     width: 100%;
-
+    
 }
 
 .form_group select{
@@ -2180,7 +2314,7 @@ tbody th, tbody td{
     font-size: 32px !important;
     font-weight: bold !important;
     letter-spacing: 0 !important;
-    line-height: 38.4px !important;
+    line-height: 38.4px !important; 
     margin-top: 30px !important;
 }
 
@@ -2215,12 +2349,12 @@ tbody th, tbody td{
     background-color: transparent !important;
 }
 
-
+  
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
     background-color: #ccc;
 }
-
+  
   /* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
@@ -2237,7 +2371,7 @@ tbody th, tbody td{
     float: left;
     margin-left: -20px;
 }
-
+  
 .faq_box.active:after {
     content: "-"; /* Unicode character for "minus" sign (-) */
 }
@@ -2256,7 +2390,7 @@ tbody th, tbody td{
     width: 402px !important;
     border-radius: 20px !important;
     background-color: #FFFFFF !important;
-    box-shadow: 0 24px 30px 0 rgba(0,0,0,0.1) !important;
+    box-shadow: 0 24px 30px 0 rgba(0,0,0,0.1) !important; 
 }
 
 .modal_body{
@@ -2335,7 +2469,7 @@ tbody th, tbody td{
     line-height: 16px !important;
     cursor: pointer !important;
     border: none !important;
-    background-color: transparent !important;
+    background-color: transparent !important; 
 }
 
 .error{
@@ -2571,7 +2705,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 12px;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 16px; 
 }
 
 /* forma-4 */
@@ -2607,7 +2741,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 13px;
     letter-spacing: 0;
-    line-height: 17px;
+    line-height: 17px; 
 }
 
 .tel input{
@@ -2621,7 +2755,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 12px;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 16px; 
 }
 
 .group_text {
@@ -2667,7 +2801,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 12px;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 16px; 
 }
 
 .e-mail input:focus{
@@ -2687,7 +2821,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 13px;
     letter-spacing: 0;
-    line-height: 17px;
+    line-height: 17px; 
 }
 
 .password input{
@@ -2701,7 +2835,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 12px;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 16px; 
 }
 
 .password input:focus{
@@ -2738,7 +2872,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 12px;
     letter-spacing: 0;
-    line-height: 14.4px;
+    line-height: 14.4px; 
 }
 
 .login-2 a{
@@ -2816,7 +2950,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 13px;
     letter-spacing: 0;
-    line-height: 17px;
+    line-height: 17px; 
 }
 
 /* next btn */
@@ -2839,7 +2973,7 @@ tbody th, tbody td{
 
 .next-btn button:hover{
     background-color:#D30F99;
-    color: #ffffff;
+    color: #ffffff; 
 }
 
 
@@ -2886,7 +3020,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 13px;
     letter-spacing: 0;
-    line-height: 17px;
+    line-height: 17px; 
 }
 
 .videoprice input{
@@ -2900,7 +3034,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 12px;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 16px;  
 }
 
 .audioprice label{
@@ -2908,7 +3042,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 13px;
     letter-spacing: 0;
-    line-height: 17px;
+    line-height: 17px; 
 }
 
 .audioprice input{
@@ -2922,7 +3056,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 12px;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 16px;  
 }
 
 .allprice label{
@@ -2930,7 +3064,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 13px;
     letter-spacing: 0;
-    line-height: 17px;
+    line-height: 17px; 
 }
 
 .allprice input{
@@ -2944,7 +3078,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 12px;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 16px;  
 }
 
 .short_text{
@@ -3173,6 +3307,7 @@ tbody th, tbody td{
 
 .form-check {
     margin-bottom: 10px;
+    display: flex !important;
 }
 
 .form-check-input {
@@ -3217,7 +3352,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 13px;
     letter-spacing: 0;
-    line-height: 17px;
+    line-height: 17px; 
     margin-right: 75px;
 }
 
@@ -3232,7 +3367,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 12px;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 16px; 
 }
 
 .tel_group_text {
@@ -3304,7 +3439,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 12px;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 16px; 
 }
 
 .myforma-8 input:focus{
@@ -3322,7 +3457,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 13px;
     letter-spacing: 0;
-    line-height: 17px;
+    line-height: 17px; 
     margin-right: 77px;
 }
 
@@ -3337,7 +3472,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 12px;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 16px; 
 }
 
 .myforma-9 input:focus{
@@ -3437,9 +3572,9 @@ tbody th, tbody td{
     font-size: 11px;
     font-weight: bold;
     letter-spacing: 0;
-    line-height: 15px;
+    line-height: 15px; 
     border-radius: 12px;
-    background-color: #D30F99;
+    background-color: #D30F99; 
     padding: 2px 12px 4px 12px;
 }
 
@@ -3449,7 +3584,7 @@ tbody th, tbody td{
     font-size: 40px;
     font-weight: bold;
     letter-spacing: 0;
-    line-height: 53px;
+    line-height: 53px; 
 }
 
 .offline_box{
@@ -3492,7 +3627,7 @@ tbody th, tbody td{
     letter-spacing: 0;
     line-height: 17px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
 }
 
 .asrt{
@@ -3531,7 +3666,7 @@ tbody th, tbody td{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
 }
 
 .boxes span{
@@ -3564,45 +3699,16 @@ tbody th, tbody td{
     margin-left: 40px;
 }
 
-.showmore h3{
-    color: #FFFFFF;
-    font-family: "Segoe UI";
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 0;
-    margin-left: 15px;
-    margin-bottom: 0;
-}
-
-.showmore i{
-    color: #D728A4;
-}
-
-.showmore span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-    border-radius: 33px;
-    background-color: #FFFFFF;
-    box-shadow: 0 0 30px 0 rgba(0,0,0,0.1);
-}
-
-.showmore {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
 .profile_image img{
     border-radius: 15px;
     float: right;
+    max-width: 100%;
 }
 
 .profile_image{
     padding-top: 35px;
     position: relative;
+    padding-left: 35px;
 }
 
 .image::before{
@@ -3625,7 +3731,7 @@ tbody th, tbody td{
 
 .qoute-box{
     height: 262px;
-    width: 648px;
+    width: 100%;
     border-radius: 7px;
     background-color: #FFFFFF;
     box-shadow: 0 0 60px 0 rgba(0,0,0,0.1);
@@ -3678,7 +3784,7 @@ tbody th, tbody td{
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 24px;
+    line-height: 24px; 
 }
 
 .know a{
@@ -3699,7 +3805,7 @@ tbody th, tbody td{
     font-size: 22px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 30px;
+    line-height: 30px; 
 }
 
 .feed-1-box h1{
@@ -3728,7 +3834,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 12px;
     letter-spacing: 0;
-    line-height: 16px;
+    line-height: 16px;  
     margin-bottom: 0;
 }
 
@@ -3741,7 +3847,7 @@ tbody th, tbody td{
     font-family: "Segoe UI";
     font-size: 14px;
     letter-spacing: 0;
-    line-height: 19px;
+    line-height: 19px;  
 }
 
 .feed-text a{
@@ -3759,7 +3865,7 @@ tbody th, tbody td{
 .feedback-1{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; 
 }
 
 .feedview button{
@@ -3784,13 +3890,13 @@ tbody th, tbody td{
     letter-spacing: 0;
     line-height: 17px;
     margin-bottom: 0;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .feedview{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
 }
 
 #feed{
@@ -3804,6 +3910,11 @@ tbody th, tbody td{
 .letter-box{
     border-radius: 8px;
     background-color: #FFFFFF;
+}
+
+.letter-box img{
+    max-width: 100%;
+    width: 100%;
 }
 
 .letter{
@@ -3872,7 +3983,7 @@ tbody th, tbody td{
     overflow-y: hidden;
     transition: 0.5s;
   }
-
+  
   .overlay-content {
     position: relative;
     top: 20%;
@@ -3880,7 +3991,7 @@ tbody th, tbody td{
     text-align: center;
     margin-top: 30px;
   }
-
+  
   .overlay a {
     padding: 8px;
     text-decoration: none;
@@ -3889,11 +4000,11 @@ tbody th, tbody td{
     display: block;
     transition: 0.3s;
   }
-
+  
   .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
   }
-
+  
   .overlay .closebtn {
     position: absolute;
     top: 5px;
@@ -3934,7 +4045,7 @@ tbody th, tbody td{
     font-size: 12px !important;
     font-weight: 600 !important;
     letter-spacing: 0 !important;
-    line-height: 16px !important;
+    line-height: 16px !important;   
 }
 
 .dropdown-toggle::after {
@@ -3958,7 +4069,7 @@ tbody th, tbody td{
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1) !important;
     border: none !important;
     min-width: 200px !important;
-    left: -40px !important;
+    left: -40px !important;  
 }
 
 .dropdown-item {
@@ -3971,13 +4082,13 @@ tbody th, tbody td{
     padding: 8px 15px !important;
 }
 
-.dropdown-item:focus,
+.dropdown-item:focus, 
 .dropdown-item:hover {
     color: #E1718C !important;
     background-color: transparent !important;
 }
 
-.dropdown-item.active,
+.dropdown-item.active, 
 .dropdown-item:active {
     background-color: transparent !important;
 }
@@ -4009,7 +4120,7 @@ tbody th, tbody td{
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 0;
-    line-height: 28.8px;
+    line-height: 28.8px; 
 }
 
 .table_balance .balance_btn{
@@ -4039,10 +4150,4 @@ tbody th, tbody td{
 
 .modal-dialog.modal-dialog-centered {
     justify-content: center !important;
-}
-
-
-.drop-menu-filter{
-  min-width: 100% !important;
-  left: 0px !important;
 }
