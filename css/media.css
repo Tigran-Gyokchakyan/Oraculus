@@ -360,6 +360,20 @@
     .letter-box{
         margin-bottom: 25px;
     }
+    .filter ul.container.ul-reset{
+        flex-wrap: wrap;
+    }
+    li.filter_link {
+        width: 100%;
+        text-align: center;
+    }
+    li.clear_link {
+        width: 100%;
+        text-align: center;
+    }
+    .filter {
+        height: auto;
+    }
 }
 
 @media screen and (max-width:991px) and 

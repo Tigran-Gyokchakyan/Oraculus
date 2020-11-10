@@ -7,12 +7,17 @@
        var num_thumbnails = $('.truasted-item').children().length;
        var sr = $(this).children('img').attr('src');
        var clicked_thumbnail_index = $($('.truasted-item')).index(this);
-
-
        $('#modal-image').attr('src', sr);
-      $('#myModal').modal('show');
-
+       $('#myModal').modal('show');
   });
+
+
+
+
+$('.close').click(function(){
+  $('.modal').removeClass('show');
+  $('.modal-backdrop').hide();
+});
 
 
 /*end lightbox*/
@@ -73,24 +78,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-
-/* google sign-in */
-
-function onSignIn(googleUser) {
-  // Useful data for your client-side scripts:
-  var profile = googleUser.getBasicProfile();
-  console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-  console.log('Full Name: ' + profile.getName());
-  console.log('Given Name: ' + profile.getGivenName());
-  console.log('Family Name: ' + profile.getFamilyName());
-  console.log("Image URL: " + profile.getImageUrl());
-  console.log("Email: " + profile.getEmail());
-
-  // The ID token you need to pass to your backend:
-  var id_token = googleUser.getAuthResponse().id_token;
-  console.log("ID Token: " + id_token);
-}
-
 /* drag-drop */
 
 $('#my-awesome-dropzone').click(function(){
@@ -103,6 +90,7 @@ $('#viewfeed').click(function(){
   $('#feed').show(2000);
 })
 
+
 /* burger-menu */
 
 function openNav() {
@@ -111,3 +99,4 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
+
