@@ -2,22 +2,23 @@
 
 /*lightbox*/
 
-
-  $('.truasted-item').on('click', function() {
-       var num_thumbnails = $('.truasted-item').children().length;
-       var sr = $(this).children('img').attr('src');
-       var clicked_thumbnail_index = $($('.truasted-item')).index(this);
-       $('#modal-image').attr('src', sr);
-       $('#myModal').modal('show');
-  });
-
-
-
-
-$('.close').click(function(){
-  $('.modal').removeClass('show');
-  $('.modal-backdrop').hide();
+$('.truasted-item').on('click', function() {
+    var num_thumbnails = $('.truasted-item').children().length;
+    var sr = $(this).children('img').attr('src');
+    var clicked_thumbnail_index = $($('.truasted-item')).index(this);
+    $('#modal-image').attr('src', sr);
+    $('#myModal').modal('show');
+    $('#myModal').addClass('show');
+    $('.modal-backdrop').show();
+    $('.show').css('display','block');
 });
+$('.close').click(function(){
+  $('#myModal').removeClass('show');
+  $('.modal-backdrop').hide();
+  $('#myModal').hide();
+  $('body').removeClass('modal-open');
+});
+
 
 
 /*end lightbox*/
@@ -99,4 +100,38 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
+
+/*My account upload*/
+function readURL(input) {
+  if (input.files && input.files[0]) {
+
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      $('.image-upload-wrap').hide();
+
+      $('.file-upload-image').attr('src', e.target.result);
+      $('.file-upload-content').show();
+
+      $('.image-title').html(input.files[0].name);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+
+  } else {
+    removeUpload();
+  }
+}
+
+function removeUpload() {
+  $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+  $('.file-upload-content').hide();
+  $('.image-upload-wrap').show();
+}
+$('.image-upload-wrap').bind('dragover', function () {
+    $('.image-upload-wrap').addClass('image-dropping');
+  });
+  $('.image-upload-wrap').bind('dragleave', function () {
+    $('.image-upload-wrap').removeClass('image-dropping');
+});
 
