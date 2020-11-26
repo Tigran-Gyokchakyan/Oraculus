@@ -1,0 +1,486 @@
+$bg-patient: #1c8274;
+$bg-btn-close: #dc3545;
+$lg: 1000px;
+::-webkit-scrollbar {
+  width: 3px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: tomato;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+::ng-deep body {
+  background-color: $bg-patient;
+}
+.waiting-list {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  top: 40%;
+}
+
+.none {
+  display: none;
+}
+.full {
+  left: 50% !important;
+  transform: translate(-50%, 0) !important;
+}
+.content-host {
+  display: flex;
+
+  &.in-call {
+    background-color: #000;
+    @media only screen and (min-width: $lg) {
+      height: 100vh;
+    }
+  }
+
+  @media only screen and (max-width: $lg) {
+    display: block;
+  }
+  .row {
+    margin: 0px;
+    .col-md-6 {
+      padding: 0px;
+    }
+  }
+  &--patients {
+    padding-top: 20px;
+    width: 100%;
+    @media only screen and (min-width: $lg) {
+      width: 250px;
+    }
+  }
+  &--patient-video {
+    position: fixed;
+    width: 75%;
+    height: 100%;
+    .video__buttons {
+      position: absolute;
+      top: 5px;
+      width: 100%;
+      text-align: center;
+      z-index: 100;
+      &--local {
+        bottom: 10px;
+        left: 0px;
+        width: 25%;
+        top: unset;
+        @media only screen and (max-width: $lg) {
+          bottom: -10px;
+          z-index: 100;
+        }
+      }
+    }
+    @media only screen and (max-width: $lg) {
+      width: 100%;
+      position: relative;
+    }
+    ::ng-deep video {
+      transform: scaleX(-1);
+      width: 100%;
+    }
+    &--waiting-list {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      width: 50%;
+      text-align: center;
+      top: 200px;
+      color: #0a4a65;
+      font-size: 50px;
+    }
+    .btn-dark {
+      background: #141518;
+      color: white;
+      border: 1px solid white;
+    }
+    .btn-red {
+      background: red !important;
+      color: white;
+      border: none !important;
+    }
+    .btn-videochat {
+      @media only screen and (max-width: $lg) {
+        width: 2.5em;
+        height: 2.5em;
+        font-size: 1em;
+      }
+      cursor:pointer;
+     width: 2.5em;
+    height: 2.5em;
+      border-radius: 100%;
+      font-size: 1em;
+      outline: none;
+      opacity: 0.8;
+      transition-duration: 0.3s;
+      margin: 0% 1%;
+      border: none;
+      .buttons__notification {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        top: 0px;
+        right: 0px;
+        border: 3px solid black;
+        background: green;
+      }
+    }
+    .btn-videochat:hover {
+      opacity: 1;
+    }
+    .btn-transparent {
+      background: none;
+      border: 1px solid white;
+    }
+    .btn-local {
+      width: 2.7em;
+      height: 2.7em;
+      @media only screen and (max-width: $lg) {
+        width: 2.2em;
+        height: 2.2em;
+      }
+    }
+  }
+  &--patient-video::before{
+        content: 'Designed by. Martin Barria';
+    position: absolute;
+    bottom: 0px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    color: #ddd;
+     @media only screen and (max-width: $lg) {
+          bottom: 5px;
+        }
+    }
+  &--patient-chat {
+    font-size: 0.8em;
+    @media only screen and (max-width: $lg) {
+      position: relative;
+      width: 100%;
+      top: -5px;
+    }
+    background: white;
+    position: fixed;
+    height: calc(100vh - 225px);
+    width: 35%;
+    right: 0px;
+  }
+  &--patient-chat-2 {
+    font-size: 0.8em;
+    @media only screen and (max-width: $lg) {
+      position: relative;
+      width: 100%;
+      top: -5px;
+    }
+    background: white;
+    position: fixed;
+    height: calc(100vh - 366px);
+    width: calc(28% - 102px);
+    right: 18%;
+    transform: translateX(-2%);
+  }
+}
+.local-video {
+  ::ng-deep video {
+    transform: scaleX(-1);
+    width: 25%;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 3px;
+    border: 1px solid #1c8274;
+    z-index: 100;
+  }
+}
+.noContestLocal {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 0px;
+  ::ng-deep video {
+    transform: scaleX(-1);
+    width: 200px;
+  }
+}
+.noContestFixed {
+  position: fixed !important;
+}
+.close-room {
+  background: tomato;
+  border: none;
+  color: white;
+  padding: 1%;
+  border-radius: 30px;
+  position: absolute;
+  top: 0px;
+}
+.close-room:hover {
+  background-color: #ff330e;
+}
+.btn-chat-text {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 1.5em;
+}
+.chat__option {
+  width: 100%;
+  border: 0;
+  background: none;
+  border-bottom: 3px solid #0000002e;
+  outline: none;
+  text-decoration: none;
+  padding: 5%;
+  @media only screen and (max-width: $lg) {
+    padding: 2%;
+  }
+}
+.chat__option:focus {
+  border-bottom: 3px solid black;
+}
+.block-muted-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("https://i.gifer.com/KMRg.gif");
+   background-repeat: no-repeat;
+  z-index: 100;
+  .person-videoMuted {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 45%;
+    font-size: 70px;
+    @media only screen and (max-width: $lg) {
+      font-size: 74px;
+    }
+  }
+}
+.block-muted-audio {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  text-align: center;
+  color: red;
+  z-index: 100;
+}
+.bi-box-arrow-left {
+  margin-bottom: 1px;
+  margin-right: 3px;
+}
+.bi-chat {
+  margin-bottom: 3px;
+}
+.bi-chat-dots {
+  margin-bottom: 3px;
+}
+.bi-mic {
+  margin-bottom: 2px;
+}
+.bi-mic-mute {
+  margin-bottom: 2px;
+}
+.bi-box-arrow-left {
+  margin-bottom: 2px;
+}
+.bi-chat-dots {
+  margin-bottom: 2px;
+}
+.bi-camera-video {
+  margin-bottom: 2px;
+}
+.bi-camera-video-off {
+  margin-bottom: 2px;
+}
+$lg: 1000px;
+$bg-btn-close: #dc3545;
+* {
+  transition-duration: 0.2s;
+}
+.patient__menu {
+  position: relative;
+  text-align: center;
+  padding: 3%;
+  border-bottom: 1px solid #ddd;
+  color: white;
+  font-weight: 100;
+  font-size: 1.2em;
+background: tomato;
+}
+.chat-username {
+  @media only screen and (max-width: $lg) {
+    padding: 1%;
+  }
+  i {
+    font-weight: 100;
+  }
+  border-bottom: 1px solid #ddd;
+  padding: 3%;
+  color: black;
+  text-align: center;
+  font-weight: 100;
+  background: #eeeeee;
+}
+.vdc__send {
+  padding: 5px 0px;
+    position: absolute;
+    background: #dddddd;
+    display: grid;
+    grid-template-columns: 10% 75% 15%;
+    font-size: 1.1em;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+  @media only screen and (max-width: $lg) {
+    position: fixed;
+    bottom: 0px;
+  }
+  .vdc__input_text {
+    border: none;
+    padding-left: 5%;
+    outline: none;
+    height: 100%;
+    width:100%;
+    background: whitesmoke;
+    font-weight: 100;
+    transition-duration: 0.3s;
+    border-radius: 50px;
+    color: #3e3e3e;
+  }
+  .vdc__button {
+    background: none;
+    border: none;
+    padding: 10% 0%;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+  }
+  .vdc__input_upload {
+    color: #818181;
+    cursor: pointer;
+    margin: 0px;
+  }
+}
+.file {
+  grid-template-columns: 75% 15% 10% !important;
+}
+.chat-container {
+  padding: 2% 5%;
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  overflow: hidden;
+  overflow-y: scroll;
+  img {
+    width: 100%;
+  }
+  @media only screen and (max-width: $lg) {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 55vh;
+    position: relative;
+  }
+}
+.chat-date {
+  font-size: 0.7em;
+  color: gray;
+  margin: 10px;
+}
+.chat-date-img {
+  float: right;
+}
+.chat-left {
+  margin-right: 3em;
+  .chat-text {
+    background-color: #ffffff;
+  }
+}
+.chat-right {
+  margin-left: 3em;
+  .chat-text {
+    background-color: #eeeeee;
+  }
+}
+.chat-container li.chat-left,
+.chat-container li.chat-right {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.chat-container li.chat-right {
+  justify-content: flex-end;
+}
+
+.chat-container li .chat-text {
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-weight: 300;
+  line-height: 150%;
+  position: relative;
+  color: black;
+  border: 1px solid #eeeeee;
+}
+
+.chat-container li.chat-right > .chat-text {
+  text-align: right;
+}
+
+.chat-container li .chat-hour {
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 15px;
+}
+
+.chat-container li .chat-hour > span {
+  font-size: 16px;
+  color: #9ec94a;
+}
+
+.chat-container li.chat-right > .chat-hour {
+  margin: 0 15px 0 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-img {
+  width: 100% !important;
+}
+
+#file-upload {
+  margin-top: 1%;
+  color: #1c8274;
+}
+
+.bi-trash {
+  color: red;
+}
+.file-over {
+  border: 1px solid red;
+}
+.credit{
+  position:absolute;
+  right:0px;
+  bottom:0px;
+  z-index:300px;
+}
+
