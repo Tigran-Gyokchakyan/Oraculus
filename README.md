@@ -1,5 +1,4 @@
 # Oraculus
-# gallery Добавлено новые страницы
-# на странице call Big Copy 2, Profile Small все готово идет доработка чата  и добавлю
+# blog_post, my_account Добавлено новые страницы
 
-# остальные страницы (call Big Copy 2, Profile Small ) проверяется и постепенно добалю суда
+# остальные страницы (gallery, call Big Copy 2, Profile Small ) проверяется и постепенно добалю суда
